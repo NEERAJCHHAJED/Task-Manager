@@ -1,0 +1,41 @@
+<html>
+
+    <head>
+        <title>Task Management System</title>
+        <link rel="stylesheet" href="TM.css">
+    </head>
+
+<body>
+
+    <h1>Task Management System</h1>
+
+    <div class="container">
+
+        <div class="task-form">
+            <h2>Create New Task</h2>
+            <label for="taskName">Task Name:</label>
+            <input type="text" id="taskName"><br><br>
+            <label for="deadline">Deadline:</label>
+            <input type="date" id="deadline"><br><br>
+            <label for="priority">Priority:</label>
+            <select id="priority">
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+            </select><br><br>
+            <label for="labels">Labels:</label>
+            <input type="text" id="labels"><br><br>
+            <button onclick="addTask()">Add Task</button>
+        </div>
+
+        <div class="task-list">
+            <h2>Task List</h2>
+            <ul id="tasks"></ul>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="TM.js"></script>
+    
+</body>
+</html>
